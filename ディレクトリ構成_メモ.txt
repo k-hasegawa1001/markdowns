@@ -1,0 +1,22 @@
+<myApp>
+    |-backend
+    |   |-Dockerfile
+    |
+    |-fronend
+    |
+    |-proxy
+    |   |-Dockerfile
+    |
+    |-db
+    |
+    |-redis
+    |
+    |-bff_web
+    |   |-Dockerfile
+    |
+    |-bff_mobile
+    |   |-Dockerfile
+    |
+    |-compose.yml
+    |-.env
+    |-.env.example
