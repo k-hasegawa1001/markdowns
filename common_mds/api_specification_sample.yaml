@@ -1,0 +1,148 @@
+openapi: 3.0.3
+info:
+  title: Authentication API
+  description: JWTベースの認証を提供するサーバーのAPI仕様書です。
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/api/v1
+    description: ローカル開発環境
+
+paths:
+  /auth/register:
+    post:
+      summary: ユーザー登録
+      description: 新規ユーザーを登録し、アカウントを作成します。
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: 登録成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '400':
+          description: バリデーションエラー（既に存在するメールアドレスなど）
+
+  /auth/login:
+    post:
+      summary: ログイン
+      description: メールアドレスとパスワードで認証を行い、アクセストークンを発行します。
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: 認証成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+        '401':
+          description: 認証失敗（パスワード間違いなど）
+
+  /auth/me:
+    get:
+      summary: ログインユーザー情報取得
+      description: 現在認証されているユーザーのプロファイル情報を取得します。
+      tags:
+        - User
+      security:
+        - bearerAuth: [] # このエンドポイントはJWT認証が必要であることを示す
+      responses:
+        '200':
+          description: 取得成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '401':
+          description: トークンが無効、または期限切れ
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: ログインAPIで取得したJWTトークンを `Authorization: Bearer <token>` の形式でヘッダーにセットしてください。
+
+  schemas:
+    RegisterRequest:
+      type: object
+      required:
+        - email
+        - password
+        - name
+      properties:
+        email:
+          type: string
+          format: email
+          example: user@example.com
+        password:
+          type: string
+          format: password
+          minLength: 8
+          example: "StrongPassword123!"
+        name:
+          type: string
+          example: "山田 太郎"
+
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: user@example.com
+        password:
+          type: string
+          format: password
+          example: "StrongPassword123!"
+
+    TokenResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        token_type:
+          type: string
+          example: "Bearer"
+        expires_in:
+          type: integer
+          description: トークンの有効期限（秒）
+          example: 3600
+
+    UserResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        email:
+          type: string
+          format: email
+          example: user@example.com
+        name:
+          type: string
+          example: "山田 太郎"
+        created_at:
+          type: string
+          format: date-time
+          example: "2026-07-03T09:00:00Z"
