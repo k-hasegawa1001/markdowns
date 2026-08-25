@@ -1,0 +1,3452 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      .user {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .model {
+        padding: 15px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+      }
+      pre {
+        background: #2d2d2d;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: monospace;
+      }
+      code {
+        font-family: monospace;
+        background: #eee;
+        padding: 2px 4px;
+        border-radius: 3px;
+        color: #333;
+      }
+      pre code {
+        background: none;
+        color: inherit;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>チャット履歴エクスポート</h1>
+    <div class="user">
+      <strong>あなた:</strong><br /><span
+        _ngcontent-ng-c235771888=""
+        class="user-query-container"
+        ><user-query-content
+          _ngcontent-ng-c235771888=""
+          class="user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates"
+          _nghost-ng-c3681072274=""
+          style="--max-lines-for-collapse-count: 4"
+          ><div _ngcontent-ng-c3681072274="" class="user-query-container">
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="file-preview-container ng-star-inserted"
+            >
+              <!----><!----><!----><!----><!----><!---->
+            </div>
+            <!---->
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="query-content ng-star-inserted"
+              id="user-query-content-0"
+              jslog="275422;track:impression,attention"
+              data-hveid="0"
+              decode-data-ved="1"
+              data-ved="0CAAQ3ucQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQlwY"
+            >
+              <!----><!----><!----><!----><span
+                _ngcontent-ng-c3681072274=""
+                data-test-id="luminous-collapsed-bubble"
+                class="user-query-bubble-with-background ng-star-inserted"
+                ><span
+                  _ngcontent-ng-c3681072274=""
+                  class="horizontal-container ng-star-inserted"
+                  ><div
+                    _ngcontent-ng-c3681072274=""
+                    aria-level="2"
+                    role="heading"
+                    class="query-text gds-body-l query-text-animated"
+                    dir="ltr"
+                  >
+                    <span
+                      _ngcontent-ng-c3681072274=""
+                      class="cdk-visually-hidden screen-reader-user-query-label"
+                      >あなたのプロンプト</span
+                    ><!---->
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      JSONの型について教えて
+                      <!----><!----><!---->
+                    </p>
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      基本的にJSONからデータを取り出すときはstring型として扱われる？
+                      <!----><!----><!---->
+                    </p>
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      Python、Go、JSの三つでそれぞれの扱いについて教えて
+                      <!----><!----><!---->
+                    </p>
+                    <!----><!---->
+                  </div>
+                  <!----></span
+                ><!----><!----><!----></span
+              ><!----><!----><!----><!---->
+            </div>
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="luminous-actions-container ng-star-inserted"
+            >
+              <gem-icon-button
+                _ngcontent-ng-c3681072274=""
+                tabindex="-1"
+                theme="lm"
+                type="onSurface"
+                arialabel="プロンプトをコピー"
+                gemtooltip="プロンプトをコピー"
+                data-test-id="prompt-copy-button"
+                class="mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled"
+                _nghost-ng-c747617227=""
+                aria-describedby="cdk-describedby-message-ng-1-164"
+                cdk-describedby-host="ng-1"
+                ><!----><!----><button
+                  _ngcontent-ng-c747617227=""
+                  maticonbutton=""
+                  matbadgeposition="after"
+                  class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                  mat-ripple-loader-uninitialized=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-centered=""
+                  aria-controls="user-query-content-0"
+                  aria-label="プロンプトをコピー"
+                  jslog='273008;track:generic_click,impression;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,null,null,null,null,null,1,null,null,null,0]]'
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  ></span
+                  ><gem-icon
+                    _ngcontent-ng-c747617227=""
+                    _nghost-ng-c3067938607=""
+                    ><mat-icon
+                      _ngcontent-ng-c3067938607=""
+                      role="img"
+                      class="mat-icon notranslate lm-icon-m lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      data-mat-icon-name="copy"
+                      data-mat-icon-namespace="lumi-symbols"
+                      fonticon="copy"
+                    ></mat-icon
+                    ><!----><!----><!----></gem-icon
+                  ><!----><span class="mat-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span></button
+                ><!----><!----></gem-icon-button
+              ><!----><gem-icon-button
+                _ngcontent-ng-c3681072274=""
+                tabindex="-1"
+                theme="lm"
+                type="onSurface"
+                arialabel="編集"
+                gemtooltip="プロンプトを編集"
+                data-test-id="prompt-edit-button"
+                class="mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                _nghost-ng-c747617227=""
+                aria-describedby="cdk-describedby-message-ng-1-163"
+                cdk-describedby-host="ng-1"
+                ><!----><!----><button
+                  _ngcontent-ng-c747617227=""
+                  maticonbutton=""
+                  matbadgeposition="after"
+                  class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                  mat-ripple-loader-uninitialized=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-centered=""
+                  aria-controls="user-query-content-0"
+                  aria-label="編集"
+                  jslog='173924;track:generic_click,impression;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,null,null,null,null,null,1,null,null,null,0]]'
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  ></span
+                  ><gem-icon
+                    _ngcontent-ng-c747617227=""
+                    _nghost-ng-c3067938607=""
+                    ><mat-icon
+                      _ngcontent-ng-c3067938607=""
+                      role="img"
+                      class="mat-icon notranslate lm-icon-m lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      data-mat-icon-name="edit"
+                      data-mat-icon-namespace="lumi-symbols"
+                      fonticon="edit"
+                    ></mat-icon
+                    ><!----><!----><!----></gem-icon
+                  ><!----><span class="mat-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span></button
+                ><!----><!----></gem-icon-button
+              ><!----><!---->
+            </div>
+            <!----><!----><!----><!----><!----><!---->
+          </div>
+          <!----><!----><!----><!----></user-query-content
+        ></span
+      >
+    </div>
+    <div class="model">
+      <strong>AI:</strong><br />
+      <div
+        _ngcontent-ng-c2812060934=""
+        inline-copy-host=""
+        class="markdown markdown-main-panel md-content enable-luminous-fast-follows enable-updated-hr-color stronger"
+        id="model-response-message-contentr_596476e9e49ca22e"
+        aria-busy="false"
+        aria-live="off"
+        dir="ltr"
+        style="--animation-duration: 400ms; --fade-animation-function: ease-out"
+      >
+        <p data-path-to-node="0">
+          結論から申し上げますと、<b
+            data-path-to-node="0"
+            data-index-in-node="12"
+            >「JSONからデータを取り出すときにすべて文字列（string型）として扱われる」というのは誤解です</b
+          >。
+        </p>
+        <p data-path-to-node="1" id="p-rc_5f6b1b90c4752a10-40">
+          <span class="citation-40 citation-end-40"
+            >通信やファイル保存の段階では、JSON全体が1つの長い「文字列」として扱われますが、プログラム内でデータをパース（解析・展開）した後は、数値は数値として、リストはリストとして、各言語の適切なデータ型に自動的に変換されます。<source-footnote
+              ng-version="0.0.0-PLACEHOLDER"
+              _nghost-ng-c1190724355=""
+              ><sup
+                _ngcontent-ng-c1190724355=""
+                class="superscript"
+                data-turn-source-index="1"
+                ><!----></sup
+              ></source-footnote
+            ></span
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="JSON からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >JSON</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <h2 data-path-to-node="2">JSONが持つ基本データ型</h2>
+        <p data-path-to-node="3" id="p-rc_5f6b1b90c4752a10-41">
+          <span class="citation-39 citation-end-39"
+            >JSON（JavaScript Object
+            Notation）の規格自体には、文字列以外にも明確に6つのデータ型が定義されています。<source-footnote
+              ng-version="0.0.0-PLACEHOLDER"
+              _nghost-ng-c1190724355=""
+              ><sup
+                _ngcontent-ng-c1190724355=""
+                class="superscript"
+                data-turn-source-index="2"
+                ><!----></sup
+              ></source-footnote
+            ></span
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="JSON からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >JSON</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <div class="horizontal-scroll-wrapper">
+          <div class="table-block-component">
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><table-block
+                _nghost-ng-c921844776=""
+                class="enable-luminous-table-block ng-star-inserted"
+                ><div
+                  _ngcontent-ng-c921844776=""
+                  class="table-block has-export-button new-table-style is-at-scroll-start is-at-scroll-end"
+                >
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    not-end-of-paragraph=""
+                    class="table-content md-content"
+                    jslog="275421;track:impression,attention"
+                    data-hveid="0"
+                    decode-data-ved="1"
+                    data-ved="0CAAQ3ecQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQ_QY"
+                  >
+                    <table data-path-to-node="4">
+                      <thead>
+                        <tr>
+                          <th>
+                            <span data-path-to-node="4,0,0,0">JSONの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="4,0,1,0">表記例</span>
+                          </th>
+                          <th><span data-path-to-node="4,0,2,0">意味</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="4,1,0,0"
+                              ><b
+                                data-path-to-node="4,1,0,0"
+                                data-index-in-node="0"
+                                >String</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,1,1,0"
+                              ><code
+                                data-path-to-node="4,1,1,0"
+                                data-index-in-node="0"
+                                >"こんにちは"</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,1,2,0"
+                              >文字列（必ずダブルクォーテーションで囲む）</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="4,2,0,0"
+                              ><b
+                                data-path-to-node="4,2,0,0"
+                                data-index-in-node="0"
+                                >Number</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,2,1,0"
+                              ><code
+                                data-path-to-node="4,2,1,0"
+                                data-index-in-node="0"
+                                >42</code
+                              >,
+                              <code
+                                data-path-to-node="4,2,1,0"
+                                data-index-in-node="4"
+                                >3.14</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,2,2,0"
+                              >数値（整数・小数の区別なし。クォーテーションで囲まない）</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="4,3,0,0"
+                              ><b
+                                data-path-to-node="4,3,0,0"
+                                data-index-in-node="0"
+                                >Boolean</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,3,1,0"
+                              ><code
+                                data-path-to-node="4,3,1,0"
+                                data-index-in-node="0"
+                                >true</code
+                              >,
+                              <code
+                                data-path-to-node="4,3,1,0"
+                                data-index-in-node="6"
+                                >false</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,3,2,0">真偽値</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="4,4,0,0"
+                              ><b
+                                data-path-to-node="4,4,0,0"
+                                data-index-in-node="0"
+                                >Null</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,4,1,0"
+                              ><code
+                                data-path-to-node="4,4,1,0"
+                                data-index-in-node="0"
+                                >null</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,4,2,0"
+                              >値が存在しない（空である）こと</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="4,5,0,0"
+                              ><b
+                                data-path-to-node="4,5,0,0"
+                                data-index-in-node="0"
+                                >Object</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,5,1,0"
+                              ><code
+                                data-path-to-node="4,5,1,0"
+                                data-index-in-node="0"
+                                >{"key": "value"}</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,5,2,0"
+                              >キーと値のペアの集まり</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="4,6,0,0"
+                              ><b
+                                data-path-to-node="4,6,0,0"
+                                data-index-in-node="0"
+                                >Array</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,6,1,0"
+                              ><code
+                                data-path-to-node="4,6,1,0"
+                                data-index-in-node="0"
+                                >[1, 2, 3]</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="4,6,2,0"
+                              >複数の値を順序付けて並べたリスト</span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    hide-from-message-actions=""
+                    class="table-footer hide-on-print hide-from-message-actions"
+                  >
+                    <gem-icon-button
+                      _ngcontent-ng-c921844776=""
+                      tabindex="0"
+                      gemmenutrigger=""
+                      cdkoverlayorigin=""
+                      theme="lm"
+                      type="tonal"
+                      arialabel="その他のオプション"
+                      gemtooltip="その他のオプション"
+                      class="mat-mdc-tooltip-trigger overflow-menu-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-tonal lm-enabled ng-star-inserted"
+                      _nghost-ng-c747617227=""
+                      aria-disabled="false"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="ng-menu-a81068-69"
+                      aria-describedby="cdk-describedby-message-ng-1-176"
+                      cdk-describedby-host="ng-1"
+                      ><!----><!----><button
+                        _ngcontent-ng-c747617227=""
+                        maticonbutton=""
+                        matbadgeposition="after"
+                        class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                        mat-ripple-loader-uninitialized=""
+                        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                        mat-ripple-loader-centered=""
+                        aria-label="その他のオプション"
+                        jslog="305704;track:generic_click,impression"
+                      >
+                        <span
+                          class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                        ></span
+                        ><gem-icon
+                          _ngcontent-ng-c747617227=""
+                          _nghost-ng-c3067938607=""
+                          ><mat-icon
+                            _ngcontent-ng-c3067938607=""
+                            role="img"
+                            class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                            aria-hidden="true"
+                            data-mat-icon-type="font"
+                            data-mat-icon-name="more_horiz"
+                            data-mat-icon-namespace="lumi-symbols"
+                            fonticon="more_horiz"
+                          ></mat-icon
+                          ><!----><!----><!----></gem-icon
+                        ><!----><span class="mat-focus-indicator"></span
+                        ><span
+                          class="mat-mdc-button-touch-target"
+                        ></span></button
+                      ><!----><!----></gem-icon-button
+                    ><!----><gem-popover
+                      _ngcontent-ng-c921844776=""
+                      _nghost-ng-c2519000736=""
+                      class="ng-star-inserted"
+                      ><!----></gem-popover
+                    ><!----><!---->
+                  </div>
+                </div>
+                <!----></table-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            >
+          </div>
+        </div>
+        <p data-path-to-node="5" id="p-rc_5f6b1b90c4752a10-42">
+          <span class="citation-38"></span
+          ><i data-path-to-node="5" data-index-in-node="0"
+            ><span class="citation-38">参考: </span
+            ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+                _nghost-ng-c2684018964=""
+                class="ng-star-inserted"
+                ><!----><!----><a
+                  _ngcontent-ng-c2684018964=""
+                  target="_blank"
+                  rel="noopener"
+                  externallink=""
+                  _nghost-ng-c1009127747=""
+                  jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                  href="https://www.json.org/json-ja.html"
+                  class="ng-star-inserted"
+                  data-hveid="0"
+                  decode-data-ved="1"
+                  data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQ_wY"
+                  ><span class="citation-38">JSON公式サイト (json.org)</span></a
+                ><!----></link-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            ></i
+          ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+              _nghost-ng-c2684018964=""
+              class="ng-star-inserted"
+              ><!----><!----><a
+                _ngcontent-ng-c2684018964=""
+                target="_blank"
+                rel="noopener"
+                externallink=""
+                _nghost-ng-c1009127747=""
+                jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                href="https://www.json.org/json-ja.html"
+                class="ng-star-inserted"
+                data-hveid="0"
+                decode-data-ved="1"
+                data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQgAc"
+                ><span class="citation-38 citation-end-38"
+                  ><source-footnote
+                    ng-version="0.0.0-PLACEHOLDER"
+                    _nghost-ng-c1190724355=""
+                    ><sup
+                      _ngcontent-ng-c1190724355=""
+                      class="superscript"
+                      data-turn-source-index="3"
+                      ><!----></sup
+                    ></source-footnote
+                  ></span
+                ></a
+              ><!----></link-block
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="JSON からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >JSON</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <h2 data-path-to-node="7">Python・Go・JavaScriptでの型の扱い</h2>
+        <p data-path-to-node="8">
+          各プログラミング言語でJSONを読み込む際、これらのデータ型は言語ごとの組み込み型にマッピングされます。それぞれの扱いを見ていきましょう。
+        </p>
+        <h3 data-path-to-node="9">1. Pythonの場合</h3>
+        <p data-path-to-node="10" id="p-rc_5f6b1b90c4752a10-43">
+          <span class="citation-37">Pythonでは標準の </span
+          ><code data-path-to-node="10" data-index-in-node="12"
+            ><span class="citation-37">json</span></code
+          ><span class="citation-37"> モジュールに備わっている </span
+          ><code data-path-to-node="10" data-index-in-node="30"
+            ><span class="citation-37">json.loads()</span></code
+          ><span class="citation-37 citation-end-37">
+            を使ってJSON文字列をパースします。型はPythonのデータ構造へ自然に変換されます。<source-footnote
+              ng-version="0.0.0-PLACEHOLDER"
+              _nghost-ng-c1190724355=""
+              ><sup
+                _ngcontent-ng-c1190724355=""
+                class="superscript"
+                data-turn-source-index="4"
+                ><!----></sup
+              ></source-footnote
+            ></span
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="Python documentation - Python.org からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >Python documentation - Python.org</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <div class="horizontal-scroll-wrapper">
+          <div class="table-block-component">
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><table-block
+                _nghost-ng-c921844776=""
+                class="enable-luminous-table-block ng-star-inserted"
+                ><div
+                  _ngcontent-ng-c921844776=""
+                  class="table-block has-export-button new-table-style is-at-scroll-start is-at-scroll-end"
+                >
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    not-end-of-paragraph=""
+                    class="table-content md-content"
+                    jslog="275421;track:impression,attention"
+                    data-hveid="0"
+                    decode-data-ved="1"
+                    data-ved="0CAAQ3ecQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQgQc"
+                  >
+                    <table data-path-to-node="11">
+                      <thead>
+                        <tr>
+                          <th>
+                            <span data-path-to-node="11,0,0,0">JSONの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="11,0,1,0"
+                              >Pythonでの型</span
+                            >
+                          </th>
+                          <th>
+                            <span data-path-to-node="11,0,2,0">備考</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="11,1,0,0">Object</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,1,1,0"
+                              ><code
+                                data-path-to-node="11,1,1,0"
+                                data-index-in-node="0"
+                                >dict</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,1,2,0"
+                              >辞書型として展開される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="11,2,0,0">Array</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,2,1,0"
+                              ><code
+                                data-path-to-node="11,2,1,0"
+                                data-index-in-node="0"
+                                >list</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,2,2,0"
+                              >リスト型になる</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="11,3,0,0">String</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,3,1,0"
+                              ><code
+                                data-path-to-node="11,3,1,0"
+                                data-index-in-node="0"
+                                >str</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,3,2,0">文字列</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="11,4,0,0">Number</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,4,1,0"
+                              ><code
+                                data-path-to-node="11,4,1,0"
+                                data-index-in-node="0"
+                                >int</code
+                              >
+                              /
+                              <code
+                                data-path-to-node="11,4,1,0"
+                                data-index-in-node="6"
+                                >float</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,4,2,0"
+                              >小数点がない場合は
+                              <code
+                                data-path-to-node="11,4,2,0"
+                                data-index-in-node="10"
+                                >int</code
+                              >、あれば
+                              <code
+                                data-path-to-node="11,4,2,0"
+                                data-index-in-node="18"
+                                >float</code
+                              >
+                              に自動判別される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="11,5,0,0">Boolean</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,5,1,0"
+                              ><code
+                                data-path-to-node="11,5,1,0"
+                                data-index-in-node="0"
+                                >bool</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,5,2,0"
+                              ><code
+                                data-path-to-node="11,5,2,0"
+                                data-index-in-node="0"
+                                >True</code
+                              >
+                              または
+                              <code
+                                data-path-to-node="11,5,2,0"
+                                data-index-in-node="9"
+                                >False</code
+                              >
+                              (頭文字が大文字)</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="11,6,0,0">Null</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,6,1,0"
+                              ><code
+                                data-path-to-node="11,6,1,0"
+                                data-index-in-node="0"
+                                >NoneType</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="11,6,2,0"
+                              ><code
+                                data-path-to-node="11,6,2,0"
+                                data-index-in-node="0"
+                                >None</code
+                              >
+                              に変換される</span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    hide-from-message-actions=""
+                    class="table-footer hide-on-print hide-from-message-actions"
+                  >
+                    <gem-icon-button
+                      _ngcontent-ng-c921844776=""
+                      tabindex="0"
+                      gemmenutrigger=""
+                      cdkoverlayorigin=""
+                      theme="lm"
+                      type="tonal"
+                      arialabel="その他のオプション"
+                      gemtooltip="その他のオプション"
+                      class="mat-mdc-tooltip-trigger overflow-menu-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-tonal lm-enabled ng-star-inserted"
+                      _nghost-ng-c747617227=""
+                      aria-disabled="false"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="ng-menu-a81068-70"
+                      aria-describedby="cdk-describedby-message-ng-1-176"
+                      cdk-describedby-host="ng-1"
+                      ><!----><!----><button
+                        _ngcontent-ng-c747617227=""
+                        maticonbutton=""
+                        matbadgeposition="after"
+                        class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                        mat-ripple-loader-uninitialized=""
+                        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                        mat-ripple-loader-centered=""
+                        aria-label="その他のオプション"
+                        jslog="305704;track:generic_click,impression"
+                      >
+                        <span
+                          class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                        ></span
+                        ><gem-icon
+                          _ngcontent-ng-c747617227=""
+                          _nghost-ng-c3067938607=""
+                          ><mat-icon
+                            _ngcontent-ng-c3067938607=""
+                            role="img"
+                            class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                            aria-hidden="true"
+                            data-mat-icon-type="font"
+                            data-mat-icon-name="more_horiz"
+                            data-mat-icon-namespace="lumi-symbols"
+                            fonticon="more_horiz"
+                          ></mat-icon
+                          ><!----><!----><!----></gem-icon
+                        ><!----><span class="mat-focus-indicator"></span
+                        ><span
+                          class="mat-mdc-button-touch-target"
+                        ></span></button
+                      ><!----><!----></gem-icon-button
+                    ><!----><gem-popover
+                      _ngcontent-ng-c921844776=""
+                      _nghost-ng-c2519000736=""
+                      class="ng-star-inserted"
+                      ><!----></gem-popover
+                    ><!----><!---->
+                  </div>
+                </div>
+                <!----></table-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            >
+          </div>
+        </div>
+        <p data-path-to-node="12" id="p-rc_5f6b1b90c4752a10-44">
+          <span class="citation-36"></span
+          ><i data-path-to-node="12" data-index-in-node="0"
+            ><span class="citation-36">参考: </span
+            ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+                _nghost-ng-c2684018964=""
+                class="ng-star-inserted"
+                ><!----><!----><a
+                  _ngcontent-ng-c2684018964=""
+                  target="_blank"
+                  rel="noopener"
+                  externallink=""
+                  _nghost-ng-c1009127747=""
+                  jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                  href="https://docs.python.org/ja/3/library/json.html"
+                  class="ng-star-inserted"
+                  data-hveid="0"
+                  decode-data-ved="1"
+                  data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQgwc"
+                  ><span class="citation-36"
+                    >Python 公式ドキュメント jsonモジュール</span
+                  ></a
+                ><!----></link-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            ></i
+          ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+              _nghost-ng-c2684018964=""
+              class="ng-star-inserted"
+              ><!----><!----><a
+                _ngcontent-ng-c2684018964=""
+                target="_blank"
+                rel="noopener"
+                externallink=""
+                _nghost-ng-c1009127747=""
+                jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                href="https://docs.python.org/ja/3/library/json.html"
+                class="ng-star-inserted"
+                data-hveid="0"
+                decode-data-ved="1"
+                data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQhAc"
+                ><span class="citation-36 citation-end-36"
+                  ><source-footnote
+                    ng-version="0.0.0-PLACEHOLDER"
+                    _nghost-ng-c1190724355=""
+                    ><sup
+                      _ngcontent-ng-c1190724355=""
+                      class="superscript"
+                      data-turn-source-index="5"
+                      ><!----></sup
+                    ></source-footnote
+                  ></span
+                ></a
+              ><!----></link-block
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="Python documentation - Python.org からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >Python documentation - Python.org</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <h3 data-path-to-node="13">2. Goの場合</h3>
+        <p data-path-to-node="14" id="p-rc_5f6b1b90c4752a10-45">
+          <span class="citation-35">Go言語では </span
+          ><code data-path-to-node="14" data-index-in-node="7"
+            ><span class="citation-35">encoding/json</span></code
+          ><span class="citation-35"> パッケージの </span
+          ><code data-path-to-node="14" data-index-in-node="28"
+            ><span class="citation-35">json.Unmarshal()</span></code
+          ><span class="citation-35">
+            を使用します。Goは静的型付け言語であるため、通常は</span
+          ><b data-path-to-node="14" data-index-in-node="71"
+            ><span class="citation-35"
+              >受け皿となる構造体（struct）を事前に定義し、そこにマッピング</span
+            ></b
+          ><span class="citation-35 citation-end-35"
+            >します。<source-footnote
+              ng-version="0.0.0-PLACEHOLDER"
+              _nghost-ng-c1190724355=""
+              ><sup
+                _ngcontent-ng-c1190724355=""
+                class="superscript"
+                data-turn-source-index="6"
+                ><!----></sup
+              ></source-footnote
+            ></span
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="Go Packages からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >Go Packages</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <p data-path-to-node="15">
+          ただし、どんなデータ構造が来るか分からない場合など、型を特定せずに
+          <code data-path-to-node="15" data-index-in-node="34">interface{}</code
+          >（任意の型を受け入れる型）で受け取った場合、デフォルトで以下のように解釈されます。
+        </p>
+        <div class="horizontal-scroll-wrapper">
+          <div class="table-block-component">
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><table-block
+                _nghost-ng-c921844776=""
+                class="enable-luminous-table-block ng-star-inserted"
+                ><div
+                  _ngcontent-ng-c921844776=""
+                  class="table-block has-export-button new-table-style is-at-scroll-start is-at-scroll-end"
+                >
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    not-end-of-paragraph=""
+                    class="table-content md-content"
+                    jslog="275421;track:impression,attention"
+                    data-hveid="0"
+                    decode-data-ved="1"
+                    data-ved="0CAAQ3ecQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQhQc"
+                  >
+                    <table data-path-to-node="16">
+                      <thead>
+                        <tr>
+                          <th>
+                            <span data-path-to-node="16,0,0,0">JSONの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="16,0,1,0"
+                              >Goでの型 (<code
+                                data-path-to-node="16,0,1,0"
+                                data-index-in-node="7"
+                                >interface{}</code
+                              >
+                              で受けた場合)</span
+                            >
+                          </th>
+                          <th>
+                            <span data-path-to-node="16,0,2,0">備考</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="16,1,0,0">Object</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,1,1,0"
+                              ><code
+                                data-path-to-node="16,1,1,0"
+                                data-index-in-node="0"
+                                >map[string]interface{}</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,1,2,0"
+                              >文字列をキーとするマップ</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="16,2,0,0">Array</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,2,1,0"
+                              ><code
+                                data-path-to-node="16,2,1,0"
+                                data-index-in-node="0"
+                                >[]interface{}</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,2,2,0"
+                              >インターフェースの配列</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="16,3,0,0">String</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,3,1,0"
+                              ><code
+                                data-path-to-node="16,3,1,0"
+                                data-index-in-node="0"
+                                >string</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,3,2,0">文字列</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="16,4,0,0">Number</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,4,1,0"
+                              ><code
+                                data-path-to-node="16,4,1,0"
+                                data-index-in-node="0"
+                                >float64</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,4,2,0"
+                              ><b
+                                data-path-to-node="16,4,2,0"
+                                data-index-in-node="0"
+                                >要注意:</b
+                              >
+                              整数であってもすべて
+                              <code
+                                data-path-to-node="16,4,2,0"
+                                data-index-in-node="16"
+                                >float64</code
+                              >
+                              として解釈される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="16,5,0,0">Boolean</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,5,1,0"
+                              ><code
+                                data-path-to-node="16,5,1,0"
+                                data-index-in-node="0"
+                                >bool</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,5,2,0"
+                              ><code
+                                data-path-to-node="16,5,2,0"
+                                data-index-in-node="0"
+                                >true</code
+                              >
+                              または
+                              <code
+                                data-path-to-node="16,5,2,0"
+                                data-index-in-node="9"
+                                >false</code
+                              ></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="16,6,0,0">Null</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,6,1,0"
+                              ><code
+                                data-path-to-node="16,6,1,0"
+                                data-index-in-node="0"
+                                >nil</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="16,6,2,0"
+                              ><code
+                                data-path-to-node="16,6,2,0"
+                                data-index-in-node="0"
+                                >nil</code
+                              >
+                              に変換される</span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    hide-from-message-actions=""
+                    class="table-footer hide-on-print hide-from-message-actions"
+                  >
+                    <gem-icon-button
+                      _ngcontent-ng-c921844776=""
+                      tabindex="0"
+                      gemmenutrigger=""
+                      cdkoverlayorigin=""
+                      theme="lm"
+                      type="tonal"
+                      arialabel="その他のオプション"
+                      gemtooltip="その他のオプション"
+                      class="mat-mdc-tooltip-trigger overflow-menu-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-tonal lm-enabled ng-star-inserted"
+                      _nghost-ng-c747617227=""
+                      aria-disabled="false"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="ng-menu-a81068-71"
+                      aria-describedby="cdk-describedby-message-ng-1-176"
+                      cdk-describedby-host="ng-1"
+                      ><!----><!----><button
+                        _ngcontent-ng-c747617227=""
+                        maticonbutton=""
+                        matbadgeposition="after"
+                        class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                        mat-ripple-loader-uninitialized=""
+                        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                        mat-ripple-loader-centered=""
+                        aria-label="その他のオプション"
+                        jslog="305704;track:generic_click,impression"
+                      >
+                        <span
+                          class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                        ></span
+                        ><gem-icon
+                          _ngcontent-ng-c747617227=""
+                          _nghost-ng-c3067938607=""
+                          ><mat-icon
+                            _ngcontent-ng-c3067938607=""
+                            role="img"
+                            class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                            aria-hidden="true"
+                            data-mat-icon-type="font"
+                            data-mat-icon-name="more_horiz"
+                            data-mat-icon-namespace="lumi-symbols"
+                            fonticon="more_horiz"
+                          ></mat-icon
+                          ><!----><!----><!----></gem-icon
+                        ><!----><span class="mat-focus-indicator"></span
+                        ><span
+                          class="mat-mdc-button-touch-target"
+                        ></span></button
+                      ><!----><!----></gem-icon-button
+                    ><!----><gem-popover
+                      _ngcontent-ng-c921844776=""
+                      _nghost-ng-c2519000736=""
+                      class="ng-star-inserted"
+                      ><!----></gem-popover
+                    ><!----><!---->
+                  </div>
+                </div>
+                <!----></table-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            >
+          </div>
+        </div>
+        <p data-path-to-node="17" id="p-rc_5f6b1b90c4752a10-46">
+          <span class="citation-34"></span
+          ><i data-path-to-node="17" data-index-in-node="0"
+            ><span class="citation-34">参考: </span
+            ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+                _nghost-ng-c2684018964=""
+                class="ng-star-inserted"
+                ><!----><!----><a
+                  _ngcontent-ng-c2684018964=""
+                  target="_blank"
+                  rel="noopener"
+                  externallink=""
+                  _nghost-ng-c1009127747=""
+                  jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                  href="https://pkg.go.dev/encoding/json"
+                  class="ng-star-inserted"
+                  data-hveid="0"
+                  decode-data-ved="1"
+                  data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQhwc"
+                  ><span class="citation-34"
+                    >Go 公式ドキュメント encoding/json</span
+                  ></a
+                ><!----></link-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            ></i
+          ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+              _nghost-ng-c2684018964=""
+              class="ng-star-inserted"
+              ><!----><!----><a
+                _ngcontent-ng-c2684018964=""
+                target="_blank"
+                rel="noopener"
+                externallink=""
+                _nghost-ng-c1009127747=""
+                jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                href="https://pkg.go.dev/encoding/json"
+                class="ng-star-inserted"
+                data-hveid="0"
+                decode-data-ved="1"
+                data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQiAc"
+                ><span class="citation-34 citation-end-34"
+                  ><source-footnote
+                    ng-version="0.0.0-PLACEHOLDER"
+                    _nghost-ng-c1190724355=""
+                    ><sup
+                      _ngcontent-ng-c1190724355=""
+                      class="superscript"
+                      data-turn-source-index="7"
+                      ><!----></sup
+                    ></source-footnote
+                  ></span
+                ></a
+              ><!----></link-block
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="Go Packages からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >Go Packages</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <h3 data-path-to-node="18">3. JavaScript (JS) の場合</h3>
+        <p data-path-to-node="19" id="p-rc_5f6b1b90c4752a10-47">
+          <span class="citation-33"
+            >JSONはもともとJavaScriptのオブジェクト記法から派生したデータ形式なので、親和性が最も高いです。</span
+          ><code data-path-to-node="19" data-index-in-node="54"
+            ><span class="citation-33">JSON.parse()</span></code
+          ><span class="citation-33 citation-end-33">
+            メソッドを使用すると、JSの型にそのまま変換されます。<source-footnote
+              ng-version="0.0.0-PLACEHOLDER"
+              _nghost-ng-c1190724355=""
+              ><sup
+                _ngcontent-ng-c1190724355=""
+                class="superscript"
+                data-turn-source-index="8"
+                ><!----></sup
+              ></source-footnote
+            ></span
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="JSON からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >JSON</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <div class="horizontal-scroll-wrapper">
+          <div class="table-block-component">
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><table-block
+                _nghost-ng-c921844776=""
+                class="enable-luminous-table-block ng-star-inserted"
+                ><div
+                  _ngcontent-ng-c921844776=""
+                  class="table-block has-export-button new-table-style is-at-scroll-start is-at-scroll-end"
+                >
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    not-end-of-paragraph=""
+                    class="table-content md-content"
+                    jslog="275421;track:impression,attention"
+                    data-hveid="0"
+                    decode-data-ved="1"
+                    data-ved="0CAAQ3ecQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQiQc"
+                  >
+                    <table data-path-to-node="20">
+                      <thead>
+                        <tr>
+                          <th>
+                            <span data-path-to-node="20,0,0,0">JSONの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="20,0,1,0">JSでの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="20,0,2,0">備考</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="20,1,0,0">Object</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,1,1,0"
+                              ><code
+                                data-path-to-node="20,1,1,0"
+                                data-index-in-node="0"
+                                >Object</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,1,2,0"
+                              >オブジェクト</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="20,2,0,0">Array</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,2,1,0"
+                              ><code
+                                data-path-to-node="20,2,1,0"
+                                data-index-in-node="0"
+                                >Array</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,2,2,0">配列</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="20,3,0,0">String</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,3,1,0"
+                              ><code
+                                data-path-to-node="20,3,1,0"
+                                data-index-in-node="0"
+                                >String</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,3,2,0">文字列</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="20,4,0,0">Number</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,4,1,0"
+                              ><code
+                                data-path-to-node="20,4,1,0"
+                                data-index-in-node="0"
+                                >Number</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,4,2,0"
+                              >全て倍精度浮動小数点数（JSの標準仕様）</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="20,5,0,0">Boolean</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,5,1,0"
+                              ><code
+                                data-path-to-node="20,5,1,0"
+                                data-index-in-node="0"
+                                >Boolean</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,5,2,0"
+                              ><code
+                                data-path-to-node="20,5,2,0"
+                                data-index-in-node="0"
+                                >true</code
+                              >
+                              または
+                              <code
+                                data-path-to-node="20,5,2,0"
+                                data-index-in-node="9"
+                                >false</code
+                              ></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="20,6,0,0">Null</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,6,1,0"
+                              ><code
+                                data-path-to-node="20,6,1,0"
+                                data-index-in-node="0"
+                                >null</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="20,6,2,0"
+                              ><code
+                                data-path-to-node="20,6,2,0"
+                                data-index-in-node="0"
+                                >null</code
+                              ></span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    hide-from-message-actions=""
+                    class="table-footer hide-on-print hide-from-message-actions"
+                  >
+                    <gem-icon-button
+                      _ngcontent-ng-c921844776=""
+                      tabindex="0"
+                      gemmenutrigger=""
+                      cdkoverlayorigin=""
+                      theme="lm"
+                      type="tonal"
+                      arialabel="その他のオプション"
+                      gemtooltip="その他のオプション"
+                      class="mat-mdc-tooltip-trigger overflow-menu-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-tonal lm-enabled ng-star-inserted"
+                      _nghost-ng-c747617227=""
+                      aria-disabled="false"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="ng-menu-a81068-72"
+                      aria-describedby="cdk-describedby-message-ng-1-176"
+                      cdk-describedby-host="ng-1"
+                      ><!----><!----><button
+                        _ngcontent-ng-c747617227=""
+                        maticonbutton=""
+                        matbadgeposition="after"
+                        class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                        mat-ripple-loader-uninitialized=""
+                        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                        mat-ripple-loader-centered=""
+                        aria-label="その他のオプション"
+                        jslog="305704;track:generic_click,impression"
+                      >
+                        <span
+                          class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                        ></span
+                        ><gem-icon
+                          _ngcontent-ng-c747617227=""
+                          _nghost-ng-c3067938607=""
+                          ><mat-icon
+                            _ngcontent-ng-c3067938607=""
+                            role="img"
+                            class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                            aria-hidden="true"
+                            data-mat-icon-type="font"
+                            data-mat-icon-name="more_horiz"
+                            data-mat-icon-namespace="lumi-symbols"
+                            fonticon="more_horiz"
+                          ></mat-icon
+                          ><!----><!----><!----></gem-icon
+                        ><!----><span class="mat-focus-indicator"></span
+                        ><span
+                          class="mat-mdc-button-touch-target"
+                        ></span></button
+                      ><!----><!----></gem-icon-button
+                    ><!----><gem-popover
+                      _ngcontent-ng-c921844776=""
+                      _nghost-ng-c2519000736=""
+                      class="ng-star-inserted"
+                      ><!----></gem-popover
+                    ><!----><!---->
+                  </div>
+                </div>
+                <!----></table-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            >
+          </div>
+        </div>
+        <p data-path-to-node="21" id="p-rc_5f6b1b90c4752a10-48">
+          <span class="citation-32"></span
+          ><i data-path-to-node="21" data-index-in-node="0"
+            ><span class="citation-32">参考: </span
+            ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+                _nghost-ng-c2684018964=""
+                class="ng-star-inserted"
+                ><!----><!----><a
+                  _ngcontent-ng-c2684018964=""
+                  target="_blank"
+                  rel="noopener"
+                  externallink=""
+                  _nghost-ng-c1009127747=""
+                  jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                  href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+                  class="ng-star-inserted"
+                  data-hveid="0"
+                  decode-data-ved="1"
+                  data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQiwc"
+                  ><span class="citation-32">MDN Web Docs JSON.parse()</span></a
+                ><!----></link-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            ></i
+          ><response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+              _nghost-ng-c2684018964=""
+              class="ng-star-inserted"
+              ><!----><!----><a
+                _ngcontent-ng-c2684018964=""
+                target="_blank"
+                rel="noopener"
+                externallink=""
+                _nghost-ng-c1009127747=""
+                jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0]]'
+                href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+                class="ng-star-inserted"
+                data-hveid="0"
+                decode-data-ved="1"
+                data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQjAc"
+                ><span class="citation-32 citation-end-32"
+                  ><source-footnote
+                    ng-version="0.0.0-PLACEHOLDER"
+                    _nghost-ng-c1190724355=""
+                    ><sup
+                      _ngcontent-ng-c1190724355=""
+                      class="superscript"
+                      data-turn-source-index="9"
+                      ><!----></sup
+                    ></source-footnote
+                  ></span
+                ></a
+              ><!----></link-block
+            ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+          ><sources-carousel-inline
+            ng-version="0.0.0-PLACEHOLDER"
+            _nghost-ng-c4220790533=""
+          >
+            <source-inline-chip
+              _ngcontent-ng-c4220790533=""
+              _nghost-ng-c2902518879=""
+              class="ng-star-inserted"
+              ><div
+                _ngcontent-ng-c2902518879=""
+                class="source-inline-chip-container luminous-sources hide-from-message-actions ng-star-inserted"
+              >
+                <button
+                  _ngcontent-ng-c2902518879=""
+                  cdkoverlayorigin=""
+                  class="button multiple-button ng-star-inserted"
+                  aria-label="developer.mozilla.org からの引用のソースの詳細を表示します。Enter キーを押すとソース ダイアログが開きます。"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  jslog='262206;track:generic_click;BardVeMetadataKey:[["r_596476e9e49ca22e","c_75b9b393edeae97e",null,"rc_5f6b1b90c4752a10",null,null,"ja",null,1,null,null,1,0],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[0]]'
+                >
+                  <!---->
+                  <div
+                    _ngcontent-ng-c2902518879=""
+                    dir="auto"
+                    class="source-label-container gds-body-s ng-star-inserted"
+                  >
+                    <span
+                      _ngcontent-ng-c2902518879=""
+                      class="source-title"
+                      style="max-width: 20ch"
+                      >developer.mozilla.org</span
+                    ><!---->
+                  </div>
+                  <!----><!----><!----><!----></button
+                ><!----><!----><!----><!---->
+              </div>
+              <!----><!----><!----><!----><!----></source-inline-chip
+            ><!----><!----><!----></sources-carousel-inline
+          >
+        </p>
+        <p data-path-to-node="23">
+          通信のパケット上やファイル内では単なるテキストデータですが、コード上で適切にパースさえすれば、ご自身で改めて数値や配列にキャスト（型変換）し直す必要はありません。
+        </p>
+      </div>
+    </div>
+    <div class="user">
+      <strong>あなた:</strong><br /><span
+        _ngcontent-ng-c235771888=""
+        class="user-query-container"
+        ><user-query-content
+          _ngcontent-ng-c235771888=""
+          class="user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates"
+          _nghost-ng-c3681072274=""
+          style="--max-lines-for-collapse-count: 4"
+          ><div _ngcontent-ng-c3681072274="" class="user-query-container">
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="file-preview-container ng-star-inserted"
+            >
+              <!----><!----><!----><!----><!----><!---->
+            </div>
+            <!---->
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="query-content ng-star-inserted"
+              id="user-query-content-1"
+              jslog="275422;track:impression,attention"
+              data-hveid="0"
+              decode-data-ved="1"
+              data-ved="0CAAQ3ucQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQmwc"
+            >
+              <!----><!----><!----><!----><span
+                _ngcontent-ng-c3681072274=""
+                data-test-id="luminous-collapsed-bubble"
+                class="user-query-bubble-with-background ng-star-inserted"
+                ><span
+                  _ngcontent-ng-c3681072274=""
+                  class="horizontal-container ng-star-inserted"
+                  ><div
+                    _ngcontent-ng-c3681072274=""
+                    aria-level="2"
+                    role="heading"
+                    class="query-text gds-body-l query-text-animated"
+                    dir="ltr"
+                  >
+                    <span
+                      _ngcontent-ng-c3681072274=""
+                      class="cdk-visually-hidden screen-reader-user-query-label"
+                      >あなたのプロンプト</span
+                    ><!---->
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      逆に、JSONに変換してリクエストボディにくっつける場合については？
+                      <!----><!----><!---->
+                    </p>
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      フロントエンド言語としてJS、Dart（Flutter）の二つについて教えて
+                      <!----><!----><!---->
+                    </p>
+                    <!----><!---->
+                  </div>
+                  <!----></span
+                ><!----><!----><!----></span
+              ><!----><!----><!----><!---->
+            </div>
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="luminous-actions-container ng-star-inserted"
+            >
+              <gem-icon-button
+                _ngcontent-ng-c3681072274=""
+                tabindex="-1"
+                theme="lm"
+                type="onSurface"
+                arialabel="プロンプトをコピー"
+                gemtooltip="プロンプトをコピー"
+                data-test-id="prompt-copy-button"
+                class="mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled"
+                _nghost-ng-c747617227=""
+                aria-describedby="cdk-describedby-message-ng-1-164"
+                cdk-describedby-host="ng-1"
+                ><!----><!----><button
+                  _ngcontent-ng-c747617227=""
+                  maticonbutton=""
+                  matbadgeposition="after"
+                  class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                  mat-ripple-loader-uninitialized=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-centered=""
+                  aria-controls="user-query-content-1"
+                  aria-label="プロンプトをコピー"
+                  jslog='273008;track:generic_click,impression;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,null,null,null,null,null,1,null,null,null,0]]'
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  ></span
+                  ><gem-icon
+                    _ngcontent-ng-c747617227=""
+                    _nghost-ng-c3067938607=""
+                    ><mat-icon
+                      _ngcontent-ng-c3067938607=""
+                      role="img"
+                      class="mat-icon notranslate lm-icon-m lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      data-mat-icon-name="copy"
+                      data-mat-icon-namespace="lumi-symbols"
+                      fonticon="copy"
+                    ></mat-icon
+                    ><!----><!----><!----></gem-icon
+                  ><!----><span class="mat-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span></button
+                ><!----><!----></gem-icon-button
+              ><!----><gem-icon-button
+                _ngcontent-ng-c3681072274=""
+                tabindex="-1"
+                theme="lm"
+                type="onSurface"
+                arialabel="編集"
+                gemtooltip="プロンプトを編集"
+                data-test-id="prompt-edit-button"
+                class="mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                _nghost-ng-c747617227=""
+                aria-describedby="cdk-describedby-message-ng-1-163"
+                cdk-describedby-host="ng-1"
+                ><!----><!----><button
+                  _ngcontent-ng-c747617227=""
+                  maticonbutton=""
+                  matbadgeposition="after"
+                  class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                  mat-ripple-loader-uninitialized=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-centered=""
+                  aria-controls="user-query-content-1"
+                  aria-label="編集"
+                  jslog='173924;track:generic_click,impression;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,null,null,null,null,null,1,null,null,null,0]]'
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  ></span
+                  ><gem-icon
+                    _ngcontent-ng-c747617227=""
+                    _nghost-ng-c3067938607=""
+                    ><mat-icon
+                      _ngcontent-ng-c3067938607=""
+                      role="img"
+                      class="mat-icon notranslate lm-icon-m lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      data-mat-icon-name="edit"
+                      data-mat-icon-namespace="lumi-symbols"
+                      fonticon="edit"
+                    ></mat-icon
+                    ><!----><!----><!----></gem-icon
+                  ><!----><span class="mat-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span></button
+                ><!----><!----></gem-icon-button
+              ><!----><!---->
+            </div>
+            <!----><!----><!----><!----><!----><!---->
+          </div>
+          <!----><!----><!----><!----></user-query-content
+        ></span
+      >
+    </div>
+    <div class="model">
+      <strong>AI:</strong><br />
+      <div
+        _ngcontent-ng-c2812060934=""
+        inline-copy-host=""
+        class="markdown markdown-main-panel md-content enable-luminous-fast-follows enable-updated-hr-color stronger"
+        id="model-response-message-contentr_aeb0702a92b6d159"
+        aria-busy="false"
+        aria-live="off"
+        dir="ltr"
+        style="--animation-duration: 400ms; --fade-animation-function: ease-out"
+      >
+        <p data-path-to-node="0">
+          プログラム内のデータをリクエストボディに乗せる場合、HTTP通信は基本的に「テキストデータ」のやり取りとなるため、<b
+            data-path-to-node="0"
+            data-index-in-node="57"
+            >プログラム内のデータ構造（オブジェクトやマップなど）を「1つの長い文字列（JSON文字列）」に変換（シリアライズ・エンコード）する</b
+          >必要があります。
+        </p>
+        <p data-path-to-node="1">
+          この変換処理を行うと、送信されるデータは型情報を保った「JSON規格のテキスト」になり、それを受け取ったサーバー側が再びパースすることで元の型として解釈できるようになります。
+        </p>
+        <p data-path-to-node="2">
+          JavaScript（フロントエンド）とDart（Flutter）での変換方法と、それぞれの型の扱いについて解説します。
+        </p>
+        <h2 data-path-to-node="4">1. JavaScript の場合</h2>
+        <p data-path-to-node="5">
+          JavaScriptでは、標準組み込みオブジェクトの
+          <code data-path-to-node="5" data-index-in-node="27"
+            >JSON.stringify()</code
+          >
+          を使用してオブジェクトをJSON文字列に変換します。
+        </p>
+        <h3 data-path-to-node="6">実装例（Fetch APIを使用）</h3>
+        <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+          ><!----><!----><!----><!----><!----><!----><code-block
+            _nghost-ng-c3234692939=""
+            class="ng-tns-c3234692939-169 enable-luminous-code-block ng-star-inserted"
+            style=""
+            ><!----><!---->
+            <div
+              _ngcontent-ng-c3234692939=""
+              class="code-block ng-tns-c3234692939-169 ng-animate-disabled ng-trigger ng-trigger-codeBlockRevealAnimation"
+              jslog='223238;track:impression,attention;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,"rc_ee99e6c1e72e36d1",null,null,"ja",null,1,null,null,1,0]]'
+              data-hveid="0"
+              decode-data-ved="1"
+              data-ved="0CAAQhtANahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQyAc"
+              style="display: block"
+            >
+              <!---->
+              <div
+                _ngcontent-ng-c3234692939=""
+                class="formatted-code-block-internal-container ng-tns-c3234692939-169"
+              >
+                <div
+                  _ngcontent-ng-c3234692939=""
+                  class="animated-opacity ng-tns-c3234692939-169"
+                >
+                  <div
+                    _ngcontent-ng-c3234692939=""
+                    class="code-block-decoration header-formatted gds-emphasized-body-m ng-tns-c3234692939-169 ng-star-inserted"
+                    style=""
+                  >
+                    <span
+                      _ngcontent-ng-c3234692939=""
+                      class="ng-tns-c3234692939-169"
+                      >JavaScript</span
+                    >
+                    <div
+                      _ngcontent-ng-c3234692939=""
+                      class="buttons ng-tns-c3234692939-169 ng-star-inserted"
+                    >
+                      <gem-icon-button
+                        _ngcontent-ng-c3234692939=""
+                        tabindex="-1"
+                        type="onSurface"
+                        size="small"
+                        fonticonname="arrow_circle_down"
+                        theme="lm"
+                        arialabel="コードをダウンロードする"
+                        gemtooltip="コードをダウンロードする"
+                        class="mat-mdc-tooltip-trigger download-button ng-tns-c3234692939-169 gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                        _nghost-ng-c747617227=""
+                        aria-describedby="cdk-describedby-message-ng-1-189"
+                        cdk-describedby-host="ng-1"
+                        ><!----><!----><button
+                          _ngcontent-ng-c747617227=""
+                          maticonbutton=""
+                          matbadgeposition="after"
+                          class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                          mat-ripple-loader-uninitialized=""
+                          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                          mat-ripple-loader-centered=""
+                          aria-label="コードをダウンロードする"
+                          jslog="305704;track:generic_click,impression"
+                        >
+                          <span
+                            class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                          ></span
+                          ><gem-icon
+                            _ngcontent-ng-c747617227=""
+                            _nghost-ng-c3067938607=""
+                            ><mat-icon
+                              _ngcontent-ng-c3067938607=""
+                              role="img"
+                              class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                              aria-hidden="true"
+                              data-mat-icon-type="font"
+                              data-mat-icon-name="arrow_circle_down"
+                              data-mat-icon-namespace="lumi-symbols"
+                              fonticon="arrow_circle_down"
+                            ></mat-icon
+                            ><!----><!----><!----></gem-icon
+                          ><!----><span class="mat-focus-indicator"></span
+                          ><span
+                            class="mat-mdc-button-touch-target"
+                          ></span></button
+                        ><!----><!----></gem-icon-button
+                      ><!----><!----><!----><!----><!----><gem-icon-button
+                        _ngcontent-ng-c3234692939=""
+                        tabindex="-1"
+                        type="onSurface"
+                        size="small"
+                        fonticonname="copy"
+                        theme="lm"
+                        arialabel="コードをコピー"
+                        gemtooltip="コードをコピー"
+                        data-test-id="gem-copy-button"
+                        class="mat-mdc-tooltip-trigger copy-button ng-tns-c3234692939-169 gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                        _nghost-ng-c747617227=""
+                        aria-describedby="cdk-describedby-message-ng-1-190"
+                        cdk-describedby-host="ng-1"
+                        ><!----><!----><button
+                          _ngcontent-ng-c747617227=""
+                          maticonbutton=""
+                          matbadgeposition="after"
+                          class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                          mat-ripple-loader-uninitialized=""
+                          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                          mat-ripple-loader-centered=""
+                          aria-label="コードをコピー"
+                          jslog='179062;track:generic_click,impression;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,"rc_ee99e6c1e72e36d1",null,null,"ja",null,1,null,null,1,0]];mutable:true'
+                        >
+                          <span
+                            class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                          ></span
+                          ><gem-icon
+                            _ngcontent-ng-c747617227=""
+                            _nghost-ng-c3067938607=""
+                            ><mat-icon
+                              _ngcontent-ng-c3067938607=""
+                              role="img"
+                              class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                              aria-hidden="true"
+                              data-mat-icon-type="font"
+                              data-mat-icon-name="copy"
+                              data-mat-icon-namespace="lumi-symbols"
+                              fonticon="copy"
+                            ></mat-icon
+                            ><!----><!----><!----></gem-icon
+                          ><!----><span class="mat-focus-indicator"></span
+                          ><span
+                            class="mat-mdc-button-touch-target"
+                          ></span></button
+                        ><!----><!----></gem-icon-button
+                      ><!----><!----><!----><!---->
+                    </div>
+                    <!----><!---->
+                  </div>
+                  <!---->
+                  <pre
+                    _ngcontent-ng-c3234692939=""
+                    class="ng-tns-c3234692939-169"
+                  ><code _ngcontent-ng-c3234692939="" role="text" data-test-id="code-content" class="code-container formatted ng-tns-c3234692939-169"><span class="hljs-keyword">const</span> requestData = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Taro"</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>,
+  <span class="hljs-attr">isStudent</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">skills</span>: [<span class="hljs-string">"Flutter"</span>, <span class="hljs-string">"JS"</span>]
+};
+
+<span class="hljs-comment">// JSON.stringify() でオブジェクトからJSON文字列に変換</span>
+<span class="hljs-keyword">const</span> jsonString = <span class="hljs-built_in">JSON</span>.stringify(requestData);
+
+fetch(<span class="hljs-string">'https://api.example.com/data'</span>, {
+  <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+  <span class="hljs-attr">headers</span>: {
+    <span class="hljs-comment">// サーバーに「これはJSON形式のテキストです」と伝えるための重要なヘッダー</span>
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span> 
+  },
+  <span class="hljs-attr">body</span>: jsonString <span class="hljs-comment">// 文字列化されたデータを入れる</span>
+});
+</code></pre>
+                  <!---->
+                </div>
+              </div>
+            </div>
+            <!----><!----><!----></code-block
+          ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+        >
+        <h3 data-path-to-node="8">JSの型 → JSONへの変換ルールと注意点</h3>
+        <p data-path-to-node="9">
+          基本的にはそのまま変換されますが、JavaScript特有の型についてはいくつか注意すべき挙動があります。
+        </p>
+        <div class="horizontal-scroll-wrapper">
+          <div class="table-block-component">
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><table-block
+                _nghost-ng-c921844776=""
+                class="enable-luminous-table-block ng-star-inserted"
+                ><div
+                  _ngcontent-ng-c921844776=""
+                  class="table-block has-export-button new-table-style is-at-scroll-start is-at-scroll-end"
+                >
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    not-end-of-paragraph=""
+                    class="table-content md-content"
+                    jslog="275421;track:impression,attention"
+                    data-hveid="0"
+                    decode-data-ved="1"
+                    data-ved="0CAAQ3ecQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQyQc"
+                  >
+                    <table data-path-to-node="10">
+                      <thead>
+                        <tr>
+                          <th>
+                            <span data-path-to-node="10,0,0,0">JSの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="10,0,1,0">JSONの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="10,0,2,0"
+                              >備考・注意点</span
+                            >
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,1,0,0"
+                              ><code
+                                data-path-to-node="10,1,0,0"
+                                data-index-in-node="0"
+                                >String</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,1,1,0">String</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,1,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,2,0,0"
+                              ><code
+                                data-path-to-node="10,2,0,0"
+                                data-index-in-node="0"
+                                >Number</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,2,1,0">Number</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,2,2,0"
+                              ><code
+                                data-path-to-node="10,2,2,0"
+                                data-index-in-node="0"
+                                >NaN</code
+                              >
+                              や
+                              <code
+                                data-path-to-node="10,2,2,0"
+                                data-index-in-node="6"
+                                >Infinity</code
+                              >
+                              は例外的に
+                              <b
+                                data-path-to-node="10,2,2,0"
+                                data-index-in-node="21"
+                                ><code
+                                  data-path-to-node="10,2,2,0"
+                                  data-index-in-node="21"
+                                  >null</code
+                                ></b
+                              >
+                              に変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,3,0,0"
+                              ><code
+                                data-path-to-node="10,3,0,0"
+                                data-index-in-node="0"
+                                >Boolean</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,3,1,0">Boolean</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,3,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,4,0,0"
+                              ><code
+                                data-path-to-node="10,4,0,0"
+                                data-index-in-node="0"
+                                >Object</code
+                              >,
+                              <code
+                                data-path-to-node="10,4,0,0"
+                                data-index-in-node="8"
+                                >Array</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,4,1,0"
+                              >Object, Array</span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,4,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,5,0,0"
+                              ><code
+                                data-path-to-node="10,5,0,0"
+                                data-index-in-node="0"
+                                >null</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,5,1,0">Null</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,5,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,6,0,0"
+                              ><b
+                                data-path-to-node="10,6,0,0"
+                                data-index-in-node="0"
+                                ><code
+                                  data-path-to-node="10,6,0,0"
+                                  data-index-in-node="0"
+                                  >Date</code
+                                >
+                                オブジェクト</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,6,1,0"
+                              ><b
+                                data-path-to-node="10,6,1,0"
+                                data-index-in-node="0"
+                                >String</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,6,2,0"
+                              >ISO 8601形式の文字列（例:
+                              <code
+                                data-path-to-node="10,6,2,0"
+                                data-index-in-node="18"
+                                >"2026-08-25T09:38:46.000Z"</code
+                              >）に自動変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="10,7,0,0"
+                              ><b
+                                data-path-to-node="10,7,0,0"
+                                data-index-in-node="0"
+                                ><code
+                                  data-path-to-node="10,7,0,0"
+                                  data-index-in-node="0"
+                                  >undefined</code
+                                >
+                                / 関数 / Symbol</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,7,1,0"
+                              >（省略される）</span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="10,7,2,0"
+                              >オブジェクトの値として含まれていた場合は**キーごと無視（削除）**される。配列の中にあった場合は
+                              <b
+                                data-path-to-node="10,7,2,0"
+                                data-index-in-node="50"
+                                ><code
+                                  data-path-to-node="10,7,2,0"
+                                  data-index-in-node="50"
+                                  >null</code
+                                ></b
+                              >
+                              に置換される</span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    hide-from-message-actions=""
+                    class="table-footer hide-on-print hide-from-message-actions"
+                  >
+                    <gem-icon-button
+                      _ngcontent-ng-c921844776=""
+                      tabindex="0"
+                      gemmenutrigger=""
+                      cdkoverlayorigin=""
+                      theme="lm"
+                      type="tonal"
+                      arialabel="その他のオプション"
+                      gemtooltip="その他のオプション"
+                      class="mat-mdc-tooltip-trigger overflow-menu-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-tonal lm-enabled ng-star-inserted"
+                      _nghost-ng-c747617227=""
+                      aria-disabled="false"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="ng-menu-a81068-81"
+                      aria-describedby="cdk-describedby-message-ng-1-176"
+                      cdk-describedby-host="ng-1"
+                      ><!----><!----><button
+                        _ngcontent-ng-c747617227=""
+                        maticonbutton=""
+                        matbadgeposition="after"
+                        class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                        mat-ripple-loader-uninitialized=""
+                        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                        mat-ripple-loader-centered=""
+                        aria-label="その他のオプション"
+                        jslog="305704;track:generic_click,impression"
+                      >
+                        <span
+                          class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                        ></span
+                        ><gem-icon
+                          _ngcontent-ng-c747617227=""
+                          _nghost-ng-c3067938607=""
+                          ><mat-icon
+                            _ngcontent-ng-c3067938607=""
+                            role="img"
+                            class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                            aria-hidden="true"
+                            data-mat-icon-type="font"
+                            data-mat-icon-name="more_horiz"
+                            data-mat-icon-namespace="lumi-symbols"
+                            fonticon="more_horiz"
+                          ></mat-icon
+                          ><!----><!----><!----></gem-icon
+                        ><!----><span class="mat-focus-indicator"></span
+                        ><span
+                          class="mat-mdc-button-touch-target"
+                        ></span></button
+                      ><!----><!----></gem-icon-button
+                    ><!----><gem-popover
+                      _ngcontent-ng-c921844776=""
+                      _nghost-ng-c2519000736=""
+                      class="ng-star-inserted"
+                      ><!----></gem-popover
+                    ><!----><!---->
+                  </div>
+                </div>
+                <!----></table-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            >
+          </div>
+        </div>
+        <p data-path-to-node="11">
+          <i data-path-to-node="11" data-index-in-node="0"
+            >参照元:
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+                _nghost-ng-c2684018964=""
+                class="ng-star-inserted"
+                ><!----><!----><a
+                  _ngcontent-ng-c2684018964=""
+                  target="_blank"
+                  rel="noopener"
+                  externallink=""
+                  _nghost-ng-c1009127747=""
+                  jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,"rc_ee99e6c1e72e36d1",null,null,"ja",null,1,null,null,1,0]]'
+                  href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
+                  class="ng-star-inserted"
+                  data-hveid="0"
+                  decode-data-ved="1"
+                  data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQywc"
+                  >MDN Web Docs - JSON.stringify()</a
+                ><!----></link-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            ></i
+          >
+        </p>
+        <h2 data-path-to-node="13">2. Dart (Flutter) の場合</h2>
+        <p data-path-to-node="14">
+          Dartでは、標準ライブラリの
+          <code data-path-to-node="14" data-index-in-node="16"
+            >dart:convert</code
+          >
+          パッケージに含まれる
+          <code data-path-to-node="14" data-index-in-node="40"
+            >jsonEncode()</code
+          >
+          を使用して、MapやListをJSON文字列に変換します。
+        </p>
+        <h3 data-path-to-node="15">
+          実装例（<code data-path-to-node="15" data-index-in-node="4"
+            >http</code
+          >
+          パッケージを使用）
+        </h3>
+        <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+          ><!----><!----><!----><!----><!----><!----><code-block
+            _nghost-ng-c3234692939=""
+            class="ng-tns-c3234692939-170 enable-luminous-code-block ng-star-inserted"
+            style=""
+            ><!----><!---->
+            <div
+              _ngcontent-ng-c3234692939=""
+              class="code-block ng-tns-c3234692939-170 ng-animate-disabled ng-trigger ng-trigger-codeBlockRevealAnimation"
+              jslog='223238;track:impression,attention;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,"rc_ee99e6c1e72e36d1",null,null,"ja",null,1,null,null,1,0]]'
+              data-hveid="0"
+              decode-data-ved="1"
+              data-ved="0CAAQhtANahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQzAc"
+              style="display: block"
+            >
+              <!---->
+              <div
+                _ngcontent-ng-c3234692939=""
+                class="formatted-code-block-internal-container ng-tns-c3234692939-170"
+              >
+                <div
+                  _ngcontent-ng-c3234692939=""
+                  class="animated-opacity ng-tns-c3234692939-170"
+                >
+                  <div
+                    _ngcontent-ng-c3234692939=""
+                    class="code-block-decoration header-formatted gds-emphasized-body-m ng-tns-c3234692939-170 ng-star-inserted"
+                    style=""
+                  >
+                    <span
+                      _ngcontent-ng-c3234692939=""
+                      class="ng-tns-c3234692939-170"
+                      >Dart</span
+                    >
+                    <div
+                      _ngcontent-ng-c3234692939=""
+                      class="buttons ng-tns-c3234692939-170 ng-star-inserted"
+                    >
+                      <gem-icon-button
+                        _ngcontent-ng-c3234692939=""
+                        tabindex="-1"
+                        type="onSurface"
+                        size="small"
+                        fonticonname="arrow_circle_down"
+                        theme="lm"
+                        arialabel="コードをダウンロードする"
+                        gemtooltip="コードをダウンロードする"
+                        class="mat-mdc-tooltip-trigger download-button ng-tns-c3234692939-170 gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                        _nghost-ng-c747617227=""
+                        aria-describedby="cdk-describedby-message-ng-1-189"
+                        cdk-describedby-host="ng-1"
+                        ><!----><!----><button
+                          _ngcontent-ng-c747617227=""
+                          maticonbutton=""
+                          matbadgeposition="after"
+                          class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                          mat-ripple-loader-uninitialized=""
+                          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                          mat-ripple-loader-centered=""
+                          aria-label="コードをダウンロードする"
+                          jslog="305704;track:generic_click,impression"
+                        >
+                          <span
+                            class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                          ></span
+                          ><gem-icon
+                            _ngcontent-ng-c747617227=""
+                            _nghost-ng-c3067938607=""
+                            ><mat-icon
+                              _ngcontent-ng-c3067938607=""
+                              role="img"
+                              class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                              aria-hidden="true"
+                              data-mat-icon-type="font"
+                              data-mat-icon-name="arrow_circle_down"
+                              data-mat-icon-namespace="lumi-symbols"
+                              fonticon="arrow_circle_down"
+                            ></mat-icon
+                            ><!----><!----><!----></gem-icon
+                          ><!----><span class="mat-focus-indicator"></span
+                          ><span
+                            class="mat-mdc-button-touch-target"
+                          ></span></button
+                        ><!----><!----></gem-icon-button
+                      ><!----><!----><!----><!----><!----><gem-icon-button
+                        _ngcontent-ng-c3234692939=""
+                        tabindex="-1"
+                        type="onSurface"
+                        size="small"
+                        fonticonname="copy"
+                        theme="lm"
+                        arialabel="コードをコピー"
+                        gemtooltip="コードをコピー"
+                        data-test-id="gem-copy-button"
+                        class="mat-mdc-tooltip-trigger copy-button ng-tns-c3234692939-170 gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                        _nghost-ng-c747617227=""
+                        aria-describedby="cdk-describedby-message-ng-1-190"
+                        cdk-describedby-host="ng-1"
+                        ><!----><!----><button
+                          _ngcontent-ng-c747617227=""
+                          maticonbutton=""
+                          matbadgeposition="after"
+                          class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                          mat-ripple-loader-uninitialized=""
+                          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                          mat-ripple-loader-centered=""
+                          aria-label="コードをコピー"
+                          jslog='179062;track:generic_click,impression;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,"rc_ee99e6c1e72e36d1",null,null,"ja",null,1,null,null,1,0]];mutable:true'
+                        >
+                          <span
+                            class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                          ></span
+                          ><gem-icon
+                            _ngcontent-ng-c747617227=""
+                            _nghost-ng-c3067938607=""
+                            ><mat-icon
+                              _ngcontent-ng-c3067938607=""
+                              role="img"
+                              class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                              aria-hidden="true"
+                              data-mat-icon-type="font"
+                              data-mat-icon-name="copy"
+                              data-mat-icon-namespace="lumi-symbols"
+                              fonticon="copy"
+                            ></mat-icon
+                            ><!----><!----><!----></gem-icon
+                          ><!----><span class="mat-focus-indicator"></span
+                          ><span
+                            class="mat-mdc-button-touch-target"
+                          ></span></button
+                        ><!----><!----></gem-icon-button
+                      ><!----><!----><!----><!---->
+                    </div>
+                    <!----><!---->
+                  </div>
+                  <!---->
+                  <pre
+                    _ngcontent-ng-c3234692939=""
+                    class="ng-tns-c3234692939-170"
+                  ><code _ngcontent-ng-c3234692939="" role="text" data-test-id="code-content" class="code-container formatted ng-tns-c3234692939-170"><span class="hljs-keyword">import</span> <span class="hljs-string">'dart:convert'</span>; <span class="hljs-comment">// jsonEncode を使うために必要</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:http/http.dart'</span> <span class="hljs-keyword">as</span> http;
+
+Future&lt;<span class="hljs-keyword">void</span>&gt; sendData() <span class="hljs-keyword">async</span> {
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">dynamic</span>&gt; requestData = {
+    <span class="hljs-string">'name'</span>: <span class="hljs-string">'Taro'</span>,
+    <span class="hljs-string">'age'</span>: <span class="hljs-number">25</span>,
+    <span class="hljs-string">'isStudent'</span>: <span class="hljs-keyword">true</span>,
+    <span class="hljs-string">'skills'</span>: [<span class="hljs-string">'Flutter'</span>, <span class="hljs-string">'Dart'</span>]
+  };
+
+  <span class="hljs-comment">// jsonEncode() でMapからJSON文字列に変換</span>
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">String</span> jsonString = jsonEncode(requestData);
+
+  <span class="hljs-keyword">await</span> http.post(
+    <span class="hljs-built_in">Uri</span>.parse(<span class="hljs-string">'https://api.example.com/data'</span>),
+    headers: {
+      <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>, <span class="hljs-comment">// 必須ヘッダー</span>
+    },
+    body: jsonString,
+  );
+}
+</code></pre>
+                  <!---->
+                </div>
+              </div>
+            </div>
+            <!----><!----><!----></code-block
+          ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+        >
+        <h3 data-path-to-node="17">Dartの型 → JSONへの変換ルールと注意点</h3>
+        <p data-path-to-node="18">
+          Dartは静的型付け言語であるため、変換対象としてサポートされていない型を
+          <code data-path-to-node="18" data-index-in-node="38">jsonEncode</code>
+          に渡すとエラー（例外）が発生します。
+        </p>
+        <div class="horizontal-scroll-wrapper">
+          <div class="table-block-component">
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><table-block
+                _nghost-ng-c921844776=""
+                class="enable-luminous-table-block ng-star-inserted"
+                ><div
+                  _ngcontent-ng-c921844776=""
+                  class="table-block has-export-button new-table-style is-at-scroll-start is-at-scroll-end"
+                >
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    not-end-of-paragraph=""
+                    class="table-content md-content"
+                    jslog="275421;track:impression,attention"
+                    data-hveid="0"
+                    decode-data-ved="1"
+                    data-ved="0CAAQ3ecQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQzQc"
+                  >
+                    <table data-path-to-node="19">
+                      <thead>
+                        <tr>
+                          <th>
+                            <span data-path-to-node="19,0,0,0">Dartの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="19,0,1,0">JSONの型</span>
+                          </th>
+                          <th>
+                            <span data-path-to-node="19,0,2,0"
+                              >備考・注意点</span
+                            >
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,1,0,0"
+                              ><code
+                                data-path-to-node="19,1,0,0"
+                                data-index-in-node="0"
+                                >String</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,1,1,0">String</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,1,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,2,0,0"
+                              ><code
+                                data-path-to-node="19,2,0,0"
+                                data-index-in-node="0"
+                                >int</code
+                              >,
+                              <code
+                                data-path-to-node="19,2,0,0"
+                                data-index-in-node="5"
+                                >double</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,2,1,0">Number</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,2,2,0"
+                              ><code
+                                data-path-to-node="19,2,2,0"
+                                data-index-in-node="0"
+                                >double.nan</code
+                              >
+                              や
+                              <code
+                                data-path-to-node="19,2,2,0"
+                                data-index-in-node="13"
+                                >double.infinity</code
+                              >
+                              はそのままではエラーになる</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,3,0,0"
+                              ><code
+                                data-path-to-node="19,3,0,0"
+                                data-index-in-node="0"
+                                >bool</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,3,1,0">Boolean</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,3,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,4,0,0"
+                              ><code
+                                data-path-to-node="19,4,0,0"
+                                data-index-in-node="0"
+                                >Map&lt;String, dynamic&gt;</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,4,1,0">Object</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,4,2,0"
+                              >キーは必ず
+                              <code
+                                data-path-to-node="19,4,2,0"
+                                data-index-in-node="6"
+                                >String</code
+                              >
+                              である必要がある</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,5,0,0"
+                              ><code
+                                data-path-to-node="19,5,0,0"
+                                data-index-in-node="0"
+                                >List</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,5,1,0">Array</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,5,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,6,0,0"
+                              ><code
+                                data-path-to-node="19,6,0,0"
+                                data-index-in-node="0"
+                                >Null</code
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,6,1,0">Null</span>
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,6,2,0"
+                              >そのまま変換される</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,7,0,0"
+                              ><b
+                                data-path-to-node="19,7,0,0"
+                                data-index-in-node="0"
+                                ><code
+                                  data-path-to-node="19,7,0,0"
+                                  data-index-in-node="0"
+                                  >DateTime</code
+                                ></b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,7,1,0"
+                              ><b
+                                data-path-to-node="19,7,1,0"
+                                data-index-in-node="0"
+                                >（エラー）</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,7,2,0"
+                              >そのままでは
+                              <code
+                                data-path-to-node="19,7,2,0"
+                                data-index-in-node="7"
+                                >JsonUnsupportedObjectError</code
+                              >
+                              が発生するため、事前に
+                              <code
+                                data-path-to-node="19,7,2,0"
+                                data-index-in-node="46"
+                                >.toIso8601String()</code
+                              >
+                              を呼び出して
+                              <code
+                                data-path-to-node="19,7,2,0"
+                                data-index-in-node="72"
+                                >String</code
+                              >
+                              に変換しておく必要がある</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span data-path-to-node="19,8,0,0"
+                              ><b
+                                data-path-to-node="19,8,0,0"
+                                data-index-in-node="0"
+                                >カスタムクラス</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,8,1,0"
+                              ><b
+                                data-path-to-node="19,8,1,0"
+                                data-index-in-node="0"
+                                >（要設定）</b
+                              ></span
+                            >
+                          </td>
+                          <td>
+                            <span data-path-to-node="19,8,2,0"
+                              >独自定義したクラスをそのまま渡すとエラーになる。クラス内に
+                              <code
+                                data-path-to-node="19,8,2,0"
+                                data-index-in-node="30"
+                                >Map&lt;String, dynamic&gt; toJson()</code
+                              >
+                              メソッドを定義しておけば、<code
+                                data-path-to-node="19,8,2,0"
+                                data-index-in-node="73"
+                                >jsonEncode</code
+                              >
+                              が自動的にそれを呼び出して変換してくれる</span
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    _ngcontent-ng-c921844776=""
+                    hide-from-message-actions=""
+                    class="table-footer hide-on-print hide-from-message-actions"
+                  >
+                    <gem-icon-button
+                      _ngcontent-ng-c921844776=""
+                      tabindex="0"
+                      gemmenutrigger=""
+                      cdkoverlayorigin=""
+                      theme="lm"
+                      type="tonal"
+                      arialabel="その他のオプション"
+                      gemtooltip="その他のオプション"
+                      class="mat-mdc-tooltip-trigger overflow-menu-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-tonal lm-enabled ng-star-inserted"
+                      _nghost-ng-c747617227=""
+                      aria-disabled="false"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="ng-menu-a81068-82"
+                      aria-describedby="cdk-describedby-message-ng-1-176"
+                      cdk-describedby-host="ng-1"
+                      ><!----><!----><button
+                        _ngcontent-ng-c747617227=""
+                        maticonbutton=""
+                        matbadgeposition="after"
+                        class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                        mat-ripple-loader-uninitialized=""
+                        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                        mat-ripple-loader-centered=""
+                        aria-label="その他のオプション"
+                        jslog="305704;track:generic_click,impression"
+                      >
+                        <span
+                          class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                        ></span
+                        ><gem-icon
+                          _ngcontent-ng-c747617227=""
+                          _nghost-ng-c3067938607=""
+                          ><mat-icon
+                            _ngcontent-ng-c3067938607=""
+                            role="img"
+                            class="mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                            aria-hidden="true"
+                            data-mat-icon-type="font"
+                            data-mat-icon-name="more_horiz"
+                            data-mat-icon-namespace="lumi-symbols"
+                            fonticon="more_horiz"
+                          ></mat-icon
+                          ><!----><!----><!----></gem-icon
+                        ><!----><span class="mat-focus-indicator"></span
+                        ><span
+                          class="mat-mdc-button-touch-target"
+                        ></span></button
+                      ><!----><!----></gem-icon-button
+                    ><!----><gem-popover
+                      _ngcontent-ng-c921844776=""
+                      _nghost-ng-c2519000736=""
+                      class="ng-star-inserted"
+                      ><!----></gem-popover
+                    ><!----><!---->
+                  </div>
+                </div>
+                <!----></table-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            >
+          </div>
+        </div>
+        <p data-path-to-node="20">
+          <i data-path-to-node="20" data-index-in-node="0"
+            >参照元:
+            <response-element class="no-md" ng-version="0.0.0-PLACEHOLDER"
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><link-block
+                _nghost-ng-c2684018964=""
+                class="ng-star-inserted"
+                ><!----><!----><a
+                  _ngcontent-ng-c2684018964=""
+                  target="_blank"
+                  rel="noopener"
+                  externallink=""
+                  _nghost-ng-c1009127747=""
+                  jslog='197247;track:generic_click,impression,attention;BardVeMetadataKey:[["r_aeb0702a92b6d159","c_75b9b393edeae97e",null,"rc_ee99e6c1e72e36d1",null,null,"ja",null,1,null,null,1,0]]'
+                  href="https://api.dart.dev/stable/dart-convert/jsonEncode.html"
+                  class="ng-star-inserted"
+                  data-hveid="0"
+                  decode-data-ved="1"
+                  data-ved="0CAAQ_4QMahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQzwc"
+                  >Dart API Reference - dart:convert jsonEncode</a
+                ><!----></link-block
+              ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></response-element
+            ></i
+          >
+        </p>
+        <h3 data-path-to-node="22">まとめ</h3>
+        <p data-path-to-node="23">
+          どちらの言語においても、リクエストボディにデータをくっつける際は以下の2点が鉄則となります。
+        </p>
+        <ol start="1" data-path-to-node="24">
+          <li>
+            <p data-path-to-node="24,0,0">
+              <b data-path-to-node="24,0,0" data-index-in-node="0"
+                >関数（<code data-path-to-node="24,0,0" data-index-in-node="3"
+                  >JSON.stringify</code
+                >
+                /
+                <code data-path-to-node="24,0,0" data-index-in-node="20"
+                  >jsonEncode</code
+                >）を使ってプログラム内のデータを「JSON形式の文字列」に変換してから
+                <code data-path-to-node="24,0,0" data-index-in-node="66"
+                  >body</code
+                >
+                に渡す。</b
+              >
+            </p>
+          </li>
+          <li>
+            <p data-path-to-node="24,1,0">
+              <b data-path-to-node="24,1,0" data-index-in-node="0"
+                >HTTPリクエストのヘッダーに
+                <code data-path-to-node="24,1,0" data-index-in-node="16"
+                  >Content-Type: application/json</code
+                >
+                を必ず指定する。</b
+              >（これを忘れると、文字列は送られていてもサーバー側が「ただのプレーンテキスト」と勘違いし、パースに失敗することが多々あります）
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="user">
+      <strong>あなた:</strong><br /><span
+        _ngcontent-ng-c235771888=""
+        class="user-query-container"
+        ><user-query-content
+          _ngcontent-ng-c235771888=""
+          class="user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates"
+          _nghost-ng-c3681072274=""
+          style="--max-lines-for-collapse-count: 4"
+          ><div _ngcontent-ng-c3681072274="" class="user-query-container">
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="file-preview-container ng-star-inserted"
+            >
+              <!----><!----><!----><!----><!----><!---->
+            </div>
+            <!---->
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="query-content ng-star-inserted"
+              id="user-query-content-2"
+              jslog="275422;track:impression,attention"
+              data-hveid="0"
+              decode-data-ved="1"
+              data-ved="0CAAQ3ucQahgKEwjbtIjWibeWAxUAAAAAHQAAAAAQ1Qc"
+            >
+              <!----><!----><!----><!----><span
+                _ngcontent-ng-c3681072274=""
+                data-test-id="luminous-collapsed-bubble"
+                class="user-query-bubble-with-background ng-star-inserted"
+                ><span
+                  _ngcontent-ng-c3681072274=""
+                  class="horizontal-container ng-star-inserted"
+                  ><div
+                    _ngcontent-ng-c3681072274=""
+                    aria-level="2"
+                    role="heading"
+                    class="query-text gds-body-l query-text-animated"
+                    dir="ltr"
+                  >
+                    <span
+                      _ngcontent-ng-c3681072274=""
+                      class="cdk-visually-hidden screen-reader-user-query-label"
+                      >あなたのプロンプト</span
+                    ><!---->
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      まとめると、まずJSONデータにも型が存在していて、受信側はjsonパッケージ（ライブラリ）など適切なものでパース（解釈）すれば特に意識することなく使用可能
+                      <!----><!----><!---->
+                    </p>
+                    <p
+                      _ngcontent-ng-c3681072274=""
+                      class="query-text-line ng-star-inserted"
+                    >
+                      送信側はJSON変換に関する仕様に関して理解しておく必要がある、っていう感じで大丈夫そう？
+                      <!----><!----><!---->
+                    </p>
+                    <!----><!---->
+                  </div>
+                  <!----></span
+                ><!----><!----><!----></span
+              ><!----><!----><!----><!---->
+            </div>
+            <div
+              _ngcontent-ng-c3681072274=""
+              class="luminous-actions-container ng-star-inserted"
+            >
+              <gem-icon-button
+                _ngcontent-ng-c3681072274=""
+                tabindex="-1"
+                theme="lm"
+                type="onSurface"
+                arialabel="プロンプトをコピー"
+                gemtooltip="プロンプトをコピー"
+                data-test-id="prompt-copy-button"
+                class="mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled"
+                _nghost-ng-c747617227=""
+                aria-describedby="cdk-describedby-message-ng-1-164"
+                cdk-describedby-host="ng-1"
+                ><!----><!----><button
+                  _ngcontent-ng-c747617227=""
+                  maticonbutton=""
+                  matbadgeposition="after"
+                  class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                  mat-ripple-loader-uninitialized=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-centered=""
+                  aria-controls="user-query-content-2"
+                  aria-label="プロンプトをコピー"
+                  jslog='273008;track:generic_click,impression;BardVeMetadataKey:[["r_64d010d52b1c7203","c_75b9b393edeae97e",null,null,null,null,null,null,1,null,null,null,0]]'
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  ></span
+                  ><gem-icon
+                    _ngcontent-ng-c747617227=""
+                    _nghost-ng-c3067938607=""
+                    ><mat-icon
+                      _ngcontent-ng-c3067938607=""
+                      role="img"
+                      class="mat-icon notranslate lm-icon-m lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      data-mat-icon-name="copy"
+                      data-mat-icon-namespace="lumi-symbols"
+                      fonticon="copy"
+                    ></mat-icon
+                    ><!----><!----><!----></gem-icon
+                  ><!----><span class="mat-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span></button
+                ><!----><!----></gem-icon-button
+              ><!----><gem-icon-button
+                _ngcontent-ng-c3681072274=""
+                tabindex="-1"
+                theme="lm"
+                type="onSurface"
+                arialabel="編集"
+                gemtooltip="プロンプトを編集"
+                data-test-id="prompt-edit-button"
+                class="mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-on-surface lm-enabled ng-star-inserted"
+                _nghost-ng-c747617227=""
+                aria-describedby="cdk-describedby-message-ng-1-163"
+                cdk-describedby-host="ng-1"
+                ><!----><!----><button
+                  _ngcontent-ng-c747617227=""
+                  maticonbutton=""
+                  matbadgeposition="after"
+                  class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-badge mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted"
+                  mat-ripple-loader-uninitialized=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-centered=""
+                  aria-controls="user-query-content-2"
+                  aria-label="編集"
+                  jslog='173924;track:generic_click,impression;BardVeMetadataKey:[["r_64d010d52b1c7203","c_75b9b393edeae97e",null,null,null,null,null,null,1,null,null,null,0]]'
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  ></span
+                  ><gem-icon
+                    _ngcontent-ng-c747617227=""
+                    _nghost-ng-c3067938607=""
+                    ><mat-icon
+                      _ngcontent-ng-c3067938607=""
+                      role="img"
+                      class="mat-icon notranslate lm-icon-m lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      data-mat-icon-name="edit"
+                      data-mat-icon-namespace="lumi-symbols"
+                      fonticon="edit"
+                    ></mat-icon
+                    ><!----><!----><!----></gem-icon
+                  ><!----><span class="mat-focus-indicator"></span
+                  ><span class="mat-mdc-button-touch-target"></span></button
+                ><!----><!----></gem-icon-button
+              ><!----><!---->
+            </div>
+            <!----><!----><!----><!----><!----><!---->
+          </div>
+          <!----><!----><!----><!----></user-query-content
+        ></span
+      >
+    </div>
+    <div class="model">
+      <strong>AI:</strong><br />
+      <div
+        _ngcontent-ng-c2812060934=""
+        inline-copy-host=""
+        class="markdown markdown-main-panel md-content enable-luminous-fast-follows enable-updated-hr-color stronger"
+        id="model-response-message-contentr_64d010d52b1c7203"
+        aria-busy="false"
+        aria-live="polite"
+        dir="ltr"
+        style="--animation-duration: 400ms; --fade-animation-function: ease-out"
+      >
+        <p data-path-to-node="0">
+          はい、その認識で完璧です！素晴らしいまとめだと思います。
+        </p>
+        <p data-path-to-node="1">
+          要点を整理いただいた通り、JSONを通じたデータのやり取りは以下のイメージを持っておけば実務でもスムーズに対応できます。
+        </p>
+        <p data-path-to-node="2">
+          <b data-path-to-node="2" data-index-in-node="0"
+            >1. 受信側の基本スタンス</b
+          >
+        </p>
+        <ul data-path-to-node="3">
+          <li>
+            <p data-path-to-node="3,0,0">
+              JSON自体に型情報が含まれているため、言語標準のパーサー（<code
+                data-path-to-node="3,0,0"
+                data-index-in-node="30"
+                >JSON.parse()</code
+              >
+              や
+              <code data-path-to-node="3,0,0" data-index-in-node="45"
+                >json.loads()</code
+              >
+              など）を通すだけで、自然と言語ごとの扱いやすい型（辞書、リスト、数値など）に変換されます。
+            </p>
+          </li>
+          <li>
+            <p data-path-to-node="3,1,0">
+              開発者は「文字列からどうやって数値に戻すか」といった変換処理を意識する必要はなく、変換後のデータ構造をそのまま活用できます。
+            </p>
+          </li>
+        </ul>
+        <p data-path-to-node="4">
+          <b data-path-to-node="4" data-index-in-node="0"
+            >2. 送信側の基本スタンス</b
+          >
+        </p>
+        <ul data-path-to-node="5">
+          <li>
+            <p data-path-to-node="5,0,0">
+              データを送信する際は、使用している言語の「JSONエンコードの仕様（クセ）」を把握しておくことが重要です。
+            </p>
+          </li>
+          <li>
+            <p data-path-to-node="5,1,0">
+              特にDart（Flutter）のような静的型付け言語では、<code
+                data-path-to-node="5,1,0"
+                data-index-in-node="29"
+                >DateTime</code
+              >
+              型や独自クラスをそのまま変換しようとしてエラーになるのが「あるある」です。
+            </p>
+          </li>
+          <li>
+            <p data-path-to-node="5,2,0">
+              また、JavaScriptでは
+              <code data-path-to-node="5,2,0" data-index-in-node="16"
+                >undefined</code
+              >
+              が消えてしまうなど、言語特有の挙動を知っておかないと「送ったはずのデータがサーバーに届いていない」というバグを生む原因になります。
+            </p>
+          </li>
+        </ul>
+        <p data-path-to-node="6">
+          <b data-path-to-node="6" data-index-in-node="0">＋αの現場の知恵</b>
+          最後に一つだけ付け加えるとすれば、送信側で忘れてはならないのが
+          <b data-path-to-node="6" data-index-in-node="41"
+            ><code data-path-to-node="6" data-index-in-node="41"
+              >Content-Type: application/json</code
+            >
+            ヘッダーの付与</b
+          >
+          です。どれだけ綺麗にJSON文字列へ変換して送信しても、このヘッダーがないと受信側のサーバーが「ただの文字の羅列が送られてきた」と判断してしまい、パースしてくれないことがあります。
+        </p>
+        <p data-path-to-node="7">
+          JSONデータの送受信に関する理解としては、今の認識でバッチリです！他に気になったことなどがあれば、いつでも聞いてくださいね。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
